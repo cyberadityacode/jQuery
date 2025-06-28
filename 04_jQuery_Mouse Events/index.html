@@ -34,7 +34,46 @@
 
 
         $(document).ready(function () {
-                        
+            /* 
+                5 events of mouse in jQuery
+                click(), dblclick(), contextmenu() [right click], mouseenter(), mouseleave();
+            */
+            /*   $("#test1").click(function () {
+                  $("#test1").css("background-color", "brown")
+                  const textTestOneHTwo = $("#test1 h2").text();
+                  console.log(textTestOneHTwo);
+              }); */
+
+            // toggle class
+            $("#test1").click(function () {
+                console.log('test1');
+                $("#test1").toggleClass("brown-bg");
+            });
+
+            // double click teal color
+
+            $("#test1").dblclick(function () {
+                $("#test1").css("background-color", "teal");
+            });
+
+            // context menu - right click
+
+            $("#test1").contextmenu(function () {
+                $("#test1").html("Right Click Developer Spotted");
+            });
+
+            // mouse enter 
+
+            $("#test1").mouseenter(function () {
+                $("#test1").css("color", "white");
+            });
+
+            // mouse leave 
+
+            $("#test1").mouseleave(function () {
+                $("#test1").css("color", "black");
+            });
+
         });
     </script>
 </body>

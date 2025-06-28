@@ -19,3 +19,14 @@
   padding: 10px;
   border: 1px solid black;
 }
+
+/* toggle class */
+
+/* because of specifity issue i am using !important */
+.brown-bg {
+  background-color: brown !important;
+}
+
+body{
+  background-color: lightblue;
+}
