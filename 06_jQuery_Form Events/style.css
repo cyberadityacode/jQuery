@@ -1,0 +1,15 @@
+.form-div{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-div form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#output{
+  margin-top: 20px;
+}
