@@ -1,0 +1,21 @@
+.parent-test {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+#test1 {
+  width: 200px;
+  height: 150px;
+  background-color: orange;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+#test2 {
+  width: 200px;
+  height: 150px;
+  background-color: brown;
+  padding: 10px;
+  border: 1px solid black;
+}

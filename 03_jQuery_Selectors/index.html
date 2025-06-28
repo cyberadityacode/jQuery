@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="../jquery-3.7.1.min.js"></script>
+    <title>Selectors jQuery</title>
+</head>
+
+<body>
+    <h1>Hello Aditya Welcome to Lesson 3 Selectors of jQuery</h1>
+    <div class="parent-test">
+        <div id="test1">
+            <h2>Text Box 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, repellat.</p>
+        </div>
+        <div id="test2">
+            <h2>Text Box 2</h2>
+            <p>Lorem2 ipsum dolor sit amet consectetur adipisicing elit. Autem, repellat.</p>
+        </div>
+
+        <div class="list-parent">
+            <ul id="list">
+                <li>Orange</li>
+                <li>Mango</li>
+                <li>Banana</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+
+
+
+        $(document).ready(function () {
+            // $("*") => select all tags
+            // $("ul li") => target parent's child
+            // $(".abc , .xyz") => target multiple classes
+            // $("h1, div, p") => target multiple tags
+            // pseudo class
+            // $("p:first") => first paragraph of the page
+            // $("p:last") => last paragraph of the page
+            // $("li:even") => even paragraphs of the page
+            // $("li:odd") => odd paragraphs of the page
+
+            $("#list").css("color", "red");
+            $("#list").css("border", "2px solid black");
+            $("#list").css("padding", "10px");
+            $("#list").css("list-style-type", "none");
+            $("#list li").css("font-weight", "bold");
+            $("li:first").css("border", "1px solid green");
+
+            // equation css target 3rd element 012
+            $("ul li:eq(2)").css("border", "2px solid yellow");
+
+            // target greater than 1 means after 2nd element implement this equation
+            $("ul li:gt(1)").css("color", "brown");
+
+            
+        });
+    </script>
+</body>
+
+</html>
