@@ -1,0 +1,30 @@
+#main-outer {
+  width: 500px;
+  height: auto;
+  background-color: powderblue;
+  padding: 10px;
+}
+
+#outer {
+  background-color: orange;
+  height: auto;
+  padding: 10px;
+}
+
+#inner {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  background-color: pink;
+  height: auto;
+  padding: 10px;
+}
+
+#inner div {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: aqua;
+  width: 50px;
+}
